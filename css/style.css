@@ -1,0 +1,49 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header {
+    position:absolute;
+    background-color: #8E8DE2;
+    color: white;
+    display: grid;
+    grid-template-columns: 300px 200px 200px 200px 200px calc(100vw - 1100px);
+    grid-template-rows: 80px;
+    font-size: 20px
+}
+.logo {
+    background: url(../img/icons8-bowling-53.png) no-repeat;
+    background-size: 70px 70px;
+    background-position: center center;
+    cursor:pointer;
+}
+
+.capsule {
+    display:flex;
+    background-color: white;
+    color: black;
+    width: 95%;
+    height: 70px;
+    border-radius: 25px;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+#content {
+    width: 100vw;
+}
+#index-bg {
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/bg.png") no-repeat;
+    background-size: 100% 100%;
+    background-position-y: 80px;
+}
+.text-content {
+    
+}
