@@ -5,7 +5,7 @@
 }
 #header {
     position:absolute;
-    background-color: #8E8DE2;
+    background-color: #1b1630;
     color: white;
     display: grid;
     width:100%;
@@ -14,20 +14,14 @@
     font-size: 20px;
     gap: 10px;
 }
-.logo {
-    background: url(../img/icons8-bowling-53.png) no-repeat;
-    background-size: 70px 70px;
-    background-position: center center;
-    cursor:pointer;
-}
 
-.capsule {
+#header a {
     display:flex;
-    background-color: white;
-    color: black;
+    background-color: #1b1630;
+    color: rgb(202, 187, 214);
     width: 100%;
     height: 70px;
-    border-radius: 25px;
+    border-radius: 10px;
     justify-self: center;
     align-self: center;
     justify-content: center;
@@ -35,6 +29,25 @@
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+}
+#header>*:first-child {
+    width:75px;
+    height:75px;
+    background: url(../img/icons8-bowling-53.png) no-repeat;
+    background-color:rgb(185 72 178);
+    border-radius: 100%;
+    background-size: 70px 70px;
+    background-position: center center;
+    cursor:pointer;
+    justify-self: center;
+    align-self: center;
+}
+#header a:not(:first-child):hover {
+    background-color:rgba(195, 0, 255, 0.253);
+    color: rgb(162, 0, 255);
+}
+body::-webkit-scrollbar {
+    display:none
 }
 #index-bg {
     height: 100vh;
@@ -45,9 +58,11 @@
 .container-500 {
     display:flex;
     height:500px;
-    background-color: rgb(219, 223, 226);
+    background-color: rgb(51, 45, 48);
     align-items: center;
     justify-content: center;
+    
+    color:rgb(179, 184, 194);
 }
 .col-flex {
     display:flex;
@@ -57,14 +72,17 @@
 input {
     width: 300px;
     height:35px;
-    border:2px solid #A0A0A0;
+    border:0;
+    background-color:rgb(179, 184, 194);
+    border-radius: 2px;
+    font-size:16px;
 }
 input:focus {
     outline:0;
 }
 .order-form {
     display:grid; 
-    grid-template-columns: 40% 60%; 
+    grid-template-columns: 40% 60%;
     gap: 10px;
 }
 .order-form p {
@@ -72,12 +90,90 @@ input:focus {
     justify-content: right;
     align-items: center;
 }
+.order-form button {
+    width: 150px;
+    height:35px;
+
+    grid-column: span 2; 
+    align-self: center; 
+    font-size:18px;
+    justify-self: center;
+}
+#turnir {
+}
+
+
+button {
+    background-color: #241f1e;
+    color: rgb(87, 74, 99);
+    border:0;
+    cursor:pointer;
+    transition: 0.2s;
+} 
+button:active {
+    background-color: #5d1963;
+    color: rgb(153, 0, 255);
+}
 input[type=number] {
     width: 50px;
-
+}
+.text-placement {
+    
+    min-height:inherit;
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    background:rgb(48, 45, 43);    
+    padding-left:5%;
+    padding-right:5%;
+    width:1022px;
+    font-size:20px;
+}
+#about {
+}
+#filials {
+    font-size:20px;
+    line-height: 30px;
+}
+#filial-map {
+    width:1022px;
+    height:700px;
+    background: url(../img/filials.png) no-repeat;
+    background-size: contain;
+    border: 1px solid black;
+}
+.container-fullscreen {
+    display:flex;
+    min-height:100vh;
+    background-color: rgb(51, 45, 48);
+    color:rgb(179, 184, 194);
+    align-items: center;
+    justify-content: center;
+}
+.container-fullscreen p>a {
+    color:#6062dd;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+h2 {
+    font-weight: 500;
+    text-align: center;
+    line-height: 2em;
+}
+.container-fullscreen>*:first-child {
+    padding-top: 80px;
+}
+.flex-start {
+    align-items: flex-start;
+}
+.flex-end {
+    align-items: flex-end;
+}
+.flex-left {
+    justify-content: left;
+}
+.flex-right {
+    justify-content: right;
 }
