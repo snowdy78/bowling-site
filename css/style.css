@@ -27,20 +27,24 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition:0.2s;
     text-decoration: none;
     text-align: center;
 }
-#header>*:first-child {
+#header>a:first-child {
     width:75px;
     height:75px;
     background: url(../img/icons8-bowling-53.png) no-repeat;
-    background-color:rgb(185 72 178);
     border-radius: 100%;
     background-size: 70px 70px;
     background-position: center center;
     cursor:pointer;
     justify-self: center;
     align-self: center;
+    transition:0.2s;
+}
+#header a:first-child:hover {
+    background-color:rgb(185 72 178);
 }
 #header a:not(:first-child):hover {
     background-color:rgba(195, 0, 255, 0.253);
