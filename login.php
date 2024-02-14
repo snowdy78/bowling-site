@@ -9,26 +9,15 @@
 
 </head>
 <body>
-    <div id="header">
-        <a class=logo href="index.php">
-        
-        </a>
-        <a class=capsule href="order.php">
-            Арендовать дорожку
-        </a>
-        <a class=capsule href="about.php">
-            О нас
-        </a>
-        <a class=capsule href="turnir.php">
-            Турниры и праздники
-        </a>
-        <a class=capsule href="filial.php">
-            Филиалы
-        </a>
-        <a href="login.php">Войти</a>
-        <a href="register.php">Регистрация</a>
-    </div>
+    
     <div class="container-fullscreen">
+        <form method="post" action="login-redirection.php">
+            <label for="">Логин или Email:</label>
+            <input type="text" name='login' id="login">
+            <label for="">Пароль:</label>
+            <input type="password" name="password" id="password">
+            <button type=submit>ДА</button>
+        </form>
         
     </div>
     

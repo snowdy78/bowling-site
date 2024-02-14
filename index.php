@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    
 
 </head>
 <body>
@@ -25,8 +26,9 @@
         <a class=capsule href="filial.php">
             Филиалы
         </a>
-        <a href="login.php">Войти</a>
-        <a href="register.php">Регистрация</a>
+        <?php
+            include_once "profile-load.php";
+        ?>
     </div>
     <div id="index-bg"></div>
     <div class="container-500">           
