@@ -25,8 +25,9 @@
         <a class=capsule href="filial.php">
             Филиалы
         </a>
-        <a href="login.php">Войти</a>
-        <a href="register.php">Регистрация</a>
+        <?php
+            include_once "profile-load.php";
+        ?>
     </div>
     <div class="container-fullscreen flex-start" style="padding-left:10%;padding-right:10%;">
         <div id="about" class="text-placement">

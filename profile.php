@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -23,11 +24,16 @@
         <a class=capsule href="filial.php">
             Филиалы
         </a>
-        <a href="login.php">Войти</a>
-        <a href="register.php">Регистрация</a>
+        <?php
+            include_once "profile-load.php";
+        ?>
     </div>
     <div class="container-fullscreen">
-        
+        <div class='text-placement'>
+            <button type='submit'>
+                Log out
+            </button>
+        </div>
     </div>
 </body>
 </html>

@@ -1,4 +1,6 @@
 <?php
+
+    session_start();
     $log = test_input($_POST['login']);
     $passw = test_input($_POST['password']);
     $passw2 = test_input($_POST['password-repeat']);
