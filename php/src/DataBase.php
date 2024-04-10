@@ -29,7 +29,7 @@
             if (!empty($user) && $user->data['password'] == $password)
             {
                 $_SESSION['login'] = $login_data;
-                header('Location:/index.php', 5);
+                header('Location:/index.php');
                 return $user;
             }
             echo "увы... D':";
@@ -51,7 +51,7 @@
                 {
                     echo "пользователь зарегистрирован";
                     $_SESSION['login'] = $login;
-                    Header("Location:/login.php",5);
+                    header("Location:/login.php");
                     return $user;
                 }
                 echo "пользователь незарегистрирован. Попробуйте еще раз";

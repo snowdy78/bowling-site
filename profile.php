@@ -28,15 +28,13 @@
             include_once "php/profile-load.php";
         ?>
     </div>
-    <div class="container-fullscreen">
-        <div class='text-placement'>
-            <a href="index.php" class="btn">
-                <?php 
-                    session_start();
-                    $_SESSION['login'] = NULL;
-                ?>
-                Log Out
-            </a>
+    <div id=content>
+        <div class="container-fullscreen">
+            <div class='text-placement'>
+                <button type="submit" class="btn" onclick="window.location='php/logout.php'">
+                    Log Out
+                </button>
+            </div>
         </div>
     </div>
 </body>
