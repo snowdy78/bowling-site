@@ -8,13 +8,11 @@
     else 
     {
         $log = $_SESSION['login'];
-        $query = 'SELECT * FROM users WHERE login="'.$log.'" or mail="'.$log.'"';
-        $mysqli = new mysqli("localhost", "root", "", "test1", 3306);
-        $result = mysqli_query($mysqli, $query);
-        $user = mysqli_fetch_assoc($result);
+        $db = new DataBase("localhost", "root", "", "test1", 3306);
+        $user = $db->getUser($log);
         if (empty($user))
             echo "user not found :(";
         else 
-            echo "<div class='register-frame' style='grid-template-columns: 2fr'><a href='profile.php'>".$user['login']."</a></div>";
+            echo "<div class='register-frame' style='grid-template-columns: 2fr'><a href='profile.php'>".$user->data['login']."</a></div>";
     }
 ?>
