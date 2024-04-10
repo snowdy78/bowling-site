@@ -26,7 +26,7 @@
             Филиалы
         </a>
         <?php
-            include_once "profile-load.php";
+            include_once "php/profile-load.php";
         ?>
     </div>
     <div class="container-fullscreen">

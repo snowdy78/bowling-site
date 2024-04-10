@@ -26,7 +26,7 @@
             Филиалы
         </a>
         <?php
-            include_once "profile-load.php";
+            include_once "php/profile-load.php";
         ?>
     </div>
     <div class="container-fullscreen flex-start" style="padding-left:10%;padding-right:10%;">
@@ -48,5 +48,8 @@
             </p>
         </div>
     </div>
+    <?php
+        include "php/load-footer.php";
+   ?>
 </body>
 </html>

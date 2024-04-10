@@ -22,10 +22,6 @@
     grid-template-rows: 100%;
     font-size: 20px;
 }
-#header .register-frame:first-child
-{
-    margin-left:10px;
-}
 #header a {
     display:flex;
     background-color: #1b1630;
@@ -48,17 +44,26 @@
     height:75px;
     background: url(../img/icons8-bowling-53.png) no-repeat;
     border-radius: 100%;
-    background-size: 70px 70px;
+    background-size: 90% 90%;
     background-position: center center;
     cursor:pointer;
     justify-self: center;
     align-self: center;
     transition:0.2s;
 }
-#header a:first-child:hover {
+#header .register-frame:first-child
+{
+    margin-left:10px;
+}
+
+#header>a:first-child:hover {
     background-color:rgb(185 72 178);
 }
-#header a:not(:first-child):hover {
+#header>a:not(:first-child):hover {
+    background-color:rgba(195, 0, 255, 0.253);
+    color: rgb(162, 0, 255);
+}
+#header .register-frame a:hover {
     background-color:rgba(195, 0, 255, 0.253);
     color: rgb(162, 0, 255);
 }
@@ -66,10 +71,9 @@ body::-webkit-scrollbar {
     display:none
 }
 #index-bg {
-    height: 100vh;
+    height: calc(100vh - 80px);
     background: url("../img/bg.png") no-repeat;
     background-size: cover;
-    background-position-y: 80px;
 }
 .container-fullscreen {
     display:flex;
@@ -129,7 +133,9 @@ input:focus {
 }
 
 
-button {
+.btn {
+    text-decoration: none;
+    color: rgb(179, 184, 194);
     padding:10px;
     border-radius: 5px;
     background-color: #241f1e;
@@ -138,12 +144,14 @@ button {
     cursor:pointer;
     transition: 0.2s;
 } 
-button:hover {
-
+.btn:hover {
+    background-color:rgba(195, 0, 255, 0.253);
+    color:rgb(153, 0, 255);
+    
 }
-button:active {
-    background-color: #5d1963;
-    color: rgb(153, 0, 255);
+.btn:active {
+    background-color: #751a7e;
+    color: rgb(222, 0, 230);
 }
 input[type=number] {
     width: 50px;
@@ -159,6 +167,9 @@ input[type=number] {
     padding-right:5%;
     width:70%;
     font-size:20px;
+}
+#content {
+    padding-top: 80px;
 }
 #about {
 }
@@ -180,7 +191,6 @@ input[type=number] {
     color:rgb(179, 184, 194);
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
     
     background-color: rgb(40 35 45)
 }

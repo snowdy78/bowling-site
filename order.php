@@ -26,7 +26,7 @@
             Филиалы
         </a>
         <?php
-            include_once "profile-load.php";
+            include_once "php/profile-load.php";
         ?>
     </div>
     <div class="container-fullscreen">           
@@ -43,7 +43,7 @@
                 <input type="number">
                 <p>Количество часов</p>
                 <input type="number">
-                <button>
+                <button class="btn">
                     Заказать
                 </button>
                 

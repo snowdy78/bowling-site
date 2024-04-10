@@ -25,14 +25,18 @@
             Филиалы
         </a>
         <?php
-            include_once "profile-load.php";
+            include_once "php/profile-load.php";
         ?>
     </div>
     <div class="container-fullscreen">
         <div class='text-placement'>
-            <button type='submit'>
-                Log out
-            </button>
+            <a href="index.php" class="btn">
+                <?php 
+                    session_start();
+                    $_SESSION['login'] = NULL;
+                ?>
+                Log Out
+            </a>
         </div>
     </div>
 </body>

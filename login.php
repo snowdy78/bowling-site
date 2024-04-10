@@ -11,12 +11,12 @@
 <body>
     
     <div class="container-fullscreen">
-        <form method="post" action="login-redirection.php">
+        <form method="post" action="php/login-redirection.php">
             <label for="">Логин или Email:</label>
             <input type="text" name='login' id="login">
             <label for="">Пароль:</label>
             <input type="password" name="password" id="password">
-            <button type=submit>ДА</button>
+            <button type=submit class="btn">ДА</button>
         </form>
         
     </div>
