@@ -1,0 +1,112 @@
+#roads {
+    display: grid;
+    width:100%;
+    height:100%;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;    
+}
+.roads-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.5s;
+    box-shadow: inset -20px -20px 40px 0px rgba(0, 0, 0, 0.4), 
+                inset 20px 20px 40px 0px rgba(0, 0, 0, 0.4);
+    color: white;
+}
+#roads .btn {
+    width:80%;
+    height:60px;
+    font-size:1.3em;
+    border-radius: 10px;
+    background-color: rgb(93, 18, 163);
+    color: rgb(255, 255, 255);
+}
+#roads .btn:hover {
+    background-color: rgb(129, 38, 214);
+    color: rgb(255, 255, 255);
+}
+#roads .inactive-btn {
+    background-color: gray;
+    color: lightgray;
+}
+#roads .roads-text {
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    text-shadow: #000 1px 0 10px;
+    transition: 0.5s;
+    width: 80%;
+    text-align: justify;
+}
+#roads > *:hover {
+    box-shadow: none;
+}
+#roads > *:hover .roads-text {
+    opacity: 1;
+    visibility:visible;
+}
+#roads .img1 {
+    width: 100%;
+    height: 100%;
+    background-position:center center;
+    background-image: url(/img/Road1.jpg);
+}
+#roads .img2 {
+    width: 100%;
+    height: 100%;
+    background-position:center center;
+    background-image: url(/img/Road2.jpg);
+}
+#roads .img3 {
+    width: 100%;
+    height: 100%;
+    background-position:center center;
+    background-image: url(/img/Road3.jpg);
+}
+#roads .img4 {
+    width: 100%;
+    height: 100%;
+    background-position:center center;
+    background-image: url(/img/Road4.jpg);
+}
+#roads .img5 {
+    width: 100%;
+    height: 100%;
+    background-position:center center;
+    background-image: url(/img/Road5.jpg);
+}
+#roads .img6 {
+    width: 100%;
+    height: 100%;
+    background-position:center center;
+    background-image: url(/img/Road6.jpg);
+}
+#roads .img7 {
+    width: 100%;
+    height: 100%;
+    background-position:center center;
+    background-image: url(/img/Road7.jpg);
+}
+#roads .img8 {
+    width: 100%;
+    height: 100%;
+    background-position:center center;
+    background-image: url(/img/Road8.jpg);
+}
+#roads .img9 {
+    width: 100%;
+    height: 100%;
+    background-position:center center;
+    background-image: url(/img/Road9.jpg);
+}
+#roads .img10 {
+    width: 100%;
+    height: 100%;
+    background-position:center center;
+    background-image: url(/img/Road10.jpg);
+}
