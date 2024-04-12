@@ -99,7 +99,7 @@
             if (!empty($user) && $user->data['password'] == $password)
             {
                 $_SESSION['login'] = $login_data;
-                header('Location:/index.php');
+                header('Location:/index.php?page=main');
                 return $user;
             }
             echo "увы... D':";
@@ -121,7 +121,7 @@
                 if (!empty($result))
                 {
                     $_SESSION['login'] = $login;
-                    header("Location:php/pages/login.php");
+                    header("Location:index.php?page=main");
                     return $this->getUser($login);
                 }
                 print "пользователь незарегистрирован. Попробуйте еще раз";
