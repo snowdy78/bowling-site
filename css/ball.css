@@ -1,0 +1,19 @@
+#ball {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100%;
+}
+
+#ball .description {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 10% 70%;
+    width:100%;
+    height:100%;
+}
+#ball .inv-btn {
+    justify-self: center;
+    align-self:flex-end;
+}

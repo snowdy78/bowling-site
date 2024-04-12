@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/roads.css">
     <link rel="stylesheet" href="/css/balls.css">
     <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/ball.css">
     <?php
         $page = new Page();
         echo "<meta name='description' content='".$page->description."'>";
