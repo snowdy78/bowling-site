@@ -1,7 +1,7 @@
 <?php
     class Page 
     {
-        static public $pages = array("main", "about", "filial", "balls", "login", "order", "profile", "register", "roads", "turnir");
+        static public $pages = array("main", "about", "filial", "balls", "login", "order", "profile", "register", "roads", "turnir", "ordered");
         public $description = "";
         public $title = "Document";
         public $name;

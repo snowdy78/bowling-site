@@ -1,6 +1,7 @@
 <?php
     include_once "User.php";
     include_once "Road.php";
+    include_once "Ball.php";
     function test_input($data)
     {
         $data = trim($data);
@@ -36,39 +37,60 @@
                 return NULL;
             return new User($user);
         }
+        public function getBallsCount()
+        {
+            $query = 'SELECT * FROM `balls_data`';
+            $result = mysqli_query($this, $query);
+            if (!empty($result))
+            {
+                return $result->num_rows;
+            }
+            return 0;
+        }
+        public function getBall(int $ball_id) 
+        {
+            $query = 'SELECT * FROM `balls_data` WHERE id='.$ball_id;
+            $result = $this->query($query);
+            if (!empty($result))
+            {
+                $ball = mysqli_fetch_assoc($result);
+                if (!empty($ball))
+                    return new Ball($ball);
+            }   
+            return NULL; 
+        }
         public function getRoadState(int $road_id) 
         {
-            $query = 'SELECT user_id FROM `roads_state` WHERE id='.$road_id;
+            $query = 'SELECT * FROM `roads_data` WHERE id='.$road_id;
             $result = mysqli_query($this, $query);
             if (!empty($result))
             {
                 $road = mysqli_fetch_assoc($result);
-                if (!empty($user_id))
-                    return new Road($road);
-            }
-            return 0;
-        }
-        public function getFreeRoad() 
-        {
-            $query = 'SELECT * FROM `roads_state` WHERE NOT(user_id=NULL)';
-            $request = mysqli_query($this, $query);
-            if (!empty($result))
-            {
-                $road = mysqli_fetch_all($result)[0];
-                if (!empty($user_id))
+                if (!empty($road))
                     return new Road($road);
             }
             return NULL;
         }
-        public function setRoadState(User $user, Road $road)
+       
+        public function getFreeRoad() 
         {
-            $query = 'UPDATE `roads_state` SET user_id='.$user->data['id'].' WHERE id='.$road['id'];
-            if (!empty(mysqli_query($this, $query)))
+            $query = 'SELECT * FROM `roads_data` WHERE NOT(user_id=NULL)';
+            $request = mysqli_query($this, $query);
+            if (!empty($result))
             {
-                echo "Статус дорожки успешно обновлён";
-                return;
+                $road = mysqli_fetch_all($result)[0];
+                if (!empty($road))
+                    return new Road($road);
             }
-            echo "Ошибка! Сатус не обновлён";
+            return NULL;
+        }
+        public function setRoadState(Road $road, User $user)
+        {
+            $query = 'UPDATE `roads_data` SET user_id='.$user->data['id'].' WHERE id='.$road->data['id'];
+            $result = mysqli_query($this, $query);
+            if (!empty($result))
+                return true;
+            return false;
         } 
         public function loginUser($login_data, $password) 
         {

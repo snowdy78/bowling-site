@@ -6,18 +6,23 @@
                 for ($i = 1; $i <= 10; $i++)
                 {
                     print "<div class='img$i roads-container'><div class='roads-text'><h1>Дорожка $i</h1>";
-                    print "<button type='submit' class='";
-                    if ($db->getRoadState($i) !== 0)
+                    print "<a class='btn";
+                    $road = $db->getRoadState($i);
+                    
+                    if ($road->data['user_id'] !== NULL)
                     {
-                        print "inactive-btn'>";
+                        print " inactive-btn'";
+                        print " href='#'>";
+                        print "Занята";
                     }
                     else
                     { 
-                        print "btn'";
+                        print "'";
+                        print " href='/php/order-redirection.php?&road=$i'>";
+                        print "Заказать";
                     }
-                    print " onclick=\"window.location='/index.php?page=order&road=$i';\">";
-                    print "Заказать";
-                    print "</button>";
+                    
+                    print "</a>";
                     print "</div></div>";
                 }
             ?>

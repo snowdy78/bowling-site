@@ -1,0 +1,55 @@
+#balls {
+    display: flex;
+    width:80%;
+    height:100%;
+}
+#balls .ball-container {
+    display: inline-grid;
+    width: 400px;
+    height: auto;
+    padding:25px;
+    margin:25px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 250px 60px 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 2.5%;
+}
+.grid-center 
+{
+    justify-self: center;
+    align-self: center;
+}
+.ball-container > *:hover {
+    cursor:default;
+}
+#balls .btn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    font-size:1.3em;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 10px;
+    background-color: rgb(93, 18, 163);
+    color: rgb(255, 255, 255);
+}
+#balls .btn:hover {
+    background-color: rgb(129, 38, 214);
+    color: rgb(255, 255, 255);
+}
+
+.imgcover {
+    background-size:cover;
+}
+.imgcenter {
+    background-position: center;
+}
+.imgstretched {
+    background-size: 100% 100%;
+}
+.imgcontain {
+    background-size: contain;
+}
