@@ -1,10 +1,12 @@
 
-<div id=content>
+<div id="content">
     <div class="container-fullscreen">
         <div class='text-placement'>
-            <button type="submit" class="btn" onclick="window.location='php/index.php?page=main'">
-                Log Out
-            </button>
+            <div id="profile" class="flex flexh-center column-flex-direction">
+                <a class="logout-btn" href="/php/logout.php">
+                    Log Out
+                </a>
+            </div>
         </div>
     </div>
 </div>
