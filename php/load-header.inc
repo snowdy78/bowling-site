@@ -8,6 +8,7 @@
     <link rel="icon" href="/favicon.ico" style="border-radius:100%;" sizes="any">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/roads.css">
+    <link rel="stylesheet" href="/css/balls.css">
     <?php
         $page = new Page();
         echo "<meta name='description' content='".$page->description."'>";
