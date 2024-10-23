@@ -1,5 +1,6 @@
 <?php
     session_start();
     $_SESSION['login'] = NULL;
-    header("Location:/index.php?page=main");
+    session_destroy();
+    header("Location:../index.php?page=main");
 ?>

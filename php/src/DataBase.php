@@ -22,7 +22,7 @@
         public function getUser($login_data) 
         {
             $query = 'SELECT * FROM users WHERE login="'.$login_data.'" OR email="'.$login_data.'"';
-            $result = mysqli_query($this, $query);
+            $result = $this->query($query);
             $user = mysqli_fetch_assoc($result);
             if (empty($user))
                 return NULL;
@@ -99,11 +99,10 @@
             if (!empty($user) && $user->data['password'] == $password)
             {
                 $_SESSION['login'] = $login_data;
-                header('Location:/index.php?page=main');
                 return $user;
             }
             echo "ошибка, неверный логин или пароль.";
-            return $user;
+            return NULL;
         }
         
         public function registerUser($login, $phone, $email, $password, $repeat_password) 
@@ -116,12 +115,11 @@
             } 
             else if ($password == $repeat_password)
             {
-                $query2 = 'INSERT INTO `users` VALUES(DEFAULT, "'.$login.'","'.$password.'","'.$email.'","'.$phone.'")'; 
+                $query2 = 'INSERT INTO `users` VALUES(DEFAULT, "'.$login.'","'.$phone.'","'.$email.'","'.$password.'")'; 
                 $result = mysqli_query($this, $query2);
                 if (!empty($result))
                 {
                     $_SESSION['login'] = $login;
-                    header("Location:index.php?page=main");
                     return $this->getUser($login);
                 }
                 print "пользователь незарегистрирован. Попробуйте еще раз";
@@ -130,7 +128,7 @@
             {
                 echo "пароли не совпадают";
             }
-            return $user;
+            return NULL;
         }
     }
 ?>

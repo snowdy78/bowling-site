@@ -11,7 +11,7 @@
                 <label for="">Телефон:</label>
                 <input type="tel" id="phone" name="phone">
                 <label for="">Элетронная почта:</label>
-                <input type="email" name="mail" id="mail">
+                <input type="email" name="email" id="mail">
                 <label for="">Пароль:</label>
                 <input type="password" name="password" id="password">
                 <label for="">Повторите Пароль :</label>

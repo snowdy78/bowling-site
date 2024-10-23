@@ -13,7 +13,7 @@
                 </form>
                 <div>
                     <?php
-                        if ($_GET['feedback'] === 'error')
+                        if (isset($_GET['feedback']) && $_GET['feedback'] === 'error')
                         {
                             echo '<b class="error-feedback">
                                 Запрос не найден.

@@ -1,6 +1,5 @@
 <div id=content>
     <div class="container-fullscreen">
-        
         <div class="text-placement flex flex-center">
             <?php
                 if (isset($_GET['ball']))
@@ -10,18 +9,8 @@
                     $ball = $db->getBall($id);
                     if ($ball !== NULL)
                     {
-                        print
-                        "<style>
-                            #ball .image {
-                                width: 60vh;
-                                height: 60vh;
-                                background-image: url('img/ball$id.png');       
-                                background-size: 100% 100%;
-                                background-position: center center;
-                            }
-                        </style>";
                         print "<div id='ball'>";
-                        print "<div class='flex flex-center'><div class='image'></div></div>";
+                        print "<div class='flex flex-center'><img class='image' src='img/ball$id.png' /></div>";
                         print "<div class='description'>
                             <h1>".$ball->data['name']."</h1>
                             <p align=center>

@@ -23,7 +23,7 @@
         <a class="header-button logo" href="./index.php?page=main">
             
         </a>
-        <a class="header-button capsule" href="./index.php?page=order">
+        <a class="header-button capsule" href="./index.php?page=roads">
             Арендовать дорожку
         </a>
         <a class="header-button capsule" href="./index.php?page=about">

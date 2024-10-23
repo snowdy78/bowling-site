@@ -8,7 +8,7 @@
                     print "<div class='img$i roads-container'><div class='roads-text'><h1>Дорожка $i</h1>";
                     print "<a class='btn";
                     $road = $db->getRoadState($i);
-                    
+
                     if ($road->data['user_id'] !== NULL)
                     {
                         print " inactive-btn'";

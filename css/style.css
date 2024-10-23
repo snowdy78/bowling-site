@@ -3,6 +3,9 @@
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
 }
+:root {
+    --header-h: 50px;
+}
 #header {
     position:absolute;
     background-color: #1b1630;
@@ -11,7 +14,7 @@
     width:100%;
     z-index: 7;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
-    grid-template-rows: 80px;
+    grid-template-rows: var(--header-h);
     font-size: 20px;
     gap: 10px;
 }
@@ -31,7 +34,8 @@
     background-color: #1b1630;
     color: rgb(202, 187, 214);
     width: 100%;
-    height: 70px;
+    height: calc(0.9*var(--header-h));
+    font-size: 13pt;
     border-radius: 8px;
     justify-self: center;
     align-self: center;
@@ -43,11 +47,11 @@
     text-align: center;
 }
 #header>.header-button:first-child {
-    width:75px;
-    height:75px;
+    width: calc(0.95*var(--header-h));
+    height: calc(0.95*var(--header-h));
     background: url(../img/icons8-bowling-53.png) no-repeat;
     border-radius: 100%;
-    background-size: 90% 90%;
+    background-size: 80% 80%;
     background-position: center center;
     cursor:pointer;
     justify-self: center;
@@ -60,7 +64,7 @@
 }
 
 #header .header-button:first-child:hover {
-    background-color:rgb(185 72 178);
+    background-color:rgba(255, 0, 238, 0.308);
 }
 #header .header-button:not(:first-child):hover, #header .register-frame .header-button:hover {
     background-color:rgba(195, 0, 255, 0.253);
@@ -136,16 +140,19 @@ ul {
     align-items: center;
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 .top-menu:hover .submenu-standart {
     opacity: 1;
-    top: 75px;
+    top: var(--header-h);
     visibility: visible;
+    
 }
 .top-menu > li:hover .submenu-standart {
     opacity: 1;
-    top:75px;
+    top:var(--header-h);
     visibility: visible;
+    
 }
 
 input {
@@ -193,14 +200,14 @@ input:focus {
     padding:10px;
     border-radius: 5px;
     background-color: #241f1e;
-    color: rgb(87, 74, 99);
-    border:0;
+    border: 1px solid rgba(140, 0, 182, 0.541); 
+    color: rgb(93, 74, 99);
     cursor:pointer;
     transition: 0.2s;
 } 
 .btn:hover {
     background-color:rgba(195, 0, 255, 0.253);
-    color:rgb(153, 0, 255);
+    color:rgb(185, 0, 209);
     
 }
 .btn:active {
@@ -223,7 +230,7 @@ input[type=number] {
     font-size:20px;
 }
 #content {
-    padding-top: 80px;
+    padding-top: var(--header-h);
 }
 #about {
 }
