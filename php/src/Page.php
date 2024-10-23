@@ -7,7 +7,8 @@
         public $name;
         public function __construct()
         {
-            $this->name = isset($_GET['page']) ? $_GET['page'] : self::$pages[0];
+            $_GET['page'] ??= self::$pages[0];
+            $this->name = $_GET['page'];
             $this->title = $this->name;
         }
         public function display() 
