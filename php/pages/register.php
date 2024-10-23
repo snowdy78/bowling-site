@@ -5,7 +5,7 @@
             Регистрация
         </div>
         <div>
-            <form method="post" action="php/register-redirection.php">
+            <form method="post" action="./php/register-redirection.php">
                 <label for="">Логин:</label>
                 <input type="text" name='login' id="login">
                 <label for="">Телефон:</label>

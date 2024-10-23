@@ -1,15 +1,17 @@
 <?php
     include_once "src/DataBase.php";
+
+    $relpath = ".";
     session_start();
     // if user is not signed in
     if (!isset($_SESSION['login']))
     {
         echo "
             <div class='register-frame'>
-                <a class='header-button' href='/index.php?page=login'>
+                <a class='header-button' href='$relpath/index.php?page=login'>
                     Войти
                 </a>
-                <a class='header-button' href='/index.php?page=register'>
+                <a class='header-button' href='$relpath/index.php?page=register'>
                     Регистрация
                 </a>
             </div>";
@@ -23,7 +25,7 @@
     else 
         echo "
             <div class='register-frame' style='grid-template-columns: 2fr'>
-                <a class='header-button' href='/index.php?page=profile'>"
+                <a class='header-button' href='$relpath/index.php?page=profile'>"
                     .$user->data['login'].
                 "</a>
             </div>";

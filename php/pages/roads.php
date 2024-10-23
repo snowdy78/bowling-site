@@ -18,7 +18,7 @@
                     else
                     { 
                         print "'";
-                        print " href='/php/order-redirection.php?&road=$i'>";
+                        print " href='./php/order-redirection.php?&road=$i'>";
                         print "Заказать";
                     }
                     

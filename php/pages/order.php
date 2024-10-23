@@ -9,7 +9,7 @@
                 if (isset($_GET['road']))
                     echo "<p style='font-size:0.8em;text-indent:20px;line-height:30px;'>Вы заказываете дорожку ".$_GET['road']."</p>";
             ?>
-            <form class="order-form" method="post" action="php/order-redirection.php">
+            <form class="order-form" method="post" action="./php/order-redirection.php">
                 <p>Имя и Фамилия</p>
                 <input type="text">
                 <p>E-Mail</p>

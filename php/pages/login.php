@@ -5,7 +5,7 @@
             Вход в аккаунт
         </div>
         <div>
-            <form method="post" action="/php/login-redirection.php">
+            <form method="post" action="./php/login-redirection.php">
                 <label for="">Логин или Email:</label>
                 <input type="text" name='login' id="login">
                 <label for="">Пароль:</label>

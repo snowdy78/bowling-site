@@ -14,14 +14,14 @@
             <div id="sitemap">
                 <h3>SITEMAP</h3>
                 <div>
-                    <a href="/index.php?page=main">Главная</a>
-                    <a href="/index.php?page=about">О нас</a>
-                    <a href="/index.php?page=order">Заказ</a>
+                    <a href="./index.php?page=main">Главная</a>
+                    <a href="./index.php?page=about">О нас</a>
+                    <a href="./index.php?page=order">Заказ</a>
                 </div>
                 <div>
-                    <a href="/index.php?page=balls">Шары</a>
-                    <a href="/index.php?page=roads">Дорожки</a>
-                    <a href="/index.php?page=turnir">Турниры</a>
+                    <a href="./index.php?page=balls">Шары</a>
+                    <a href="./index.php?page=roads">Дорожки</a>
+                    <a href="./index.php?page=turnir">Турниры</a>
                 </div>
             </div>
             <div id="social">

@@ -5,7 +5,7 @@
 
             </div>
             <div class="flex flex-center column-flex-direction">
-                <form class=search-container method="post" action="/php/ball-search.php">
+                <form class=search-container method="post" action="./php/ball-search.php">
                     <input class="search" type="text" name="search" placeholder="Поиск">
                     <button class='inv-btn' type='submit'>
                         Поиск
@@ -50,7 +50,7 @@
                                             ".$ball->data['price']."р.<br>
                                             ".$ball->data['color']."/".$ball->data['secondary_color']."
                                         </p>
-                                        <a class='grid-center btn' href='index.php?page=ball&ball=".$ball->data['id']."'>
+                                        <a class='grid-center btn' href='./index.php?page=ball&ball=".$ball->data['id']."'>
                                             Купить
                                         </a>
                                     </div>
