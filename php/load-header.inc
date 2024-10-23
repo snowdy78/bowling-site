@@ -6,11 +6,11 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.ico" style="border-radius:100%;" sizes="any">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/roads.css">
-    <link rel="stylesheet" href="/css/balls.css">
-    <link rel="stylesheet" href="/css/profile.css">
-    <link rel="stylesheet" href="/css/ball.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/roads.css">
+    <link rel="stylesheet" href="css/balls.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/ball.css">
     <?php
         $page = new Page();
         echo "<meta name='description' content='".$page->description."'>";

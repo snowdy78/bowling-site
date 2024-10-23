@@ -1,5 +1,4 @@
-<html>
-<body>
+
    <footer>
         <div id="footer">
             <div id="twitter">
@@ -37,7 +36,7 @@
                 <a href="/rss/" class="social-icon-small rss"></a>
             </div>
             <div id="footer-logo">
-                <a href="/"><img src="../img/logo.png" alt="Whitesquare logo"></a>
+                <a href="/"><img src="img/logo.png" alt="Whitesquare logo"></a>
                 <p>Copyright &copy; 2012 Whitesquare. A <a href="http://pcklab.com">pcklab</a> creation </p>
             </div>
         </div>
