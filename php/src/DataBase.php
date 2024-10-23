@@ -102,7 +102,7 @@
                 header('Location:/index.php?page=main');
                 return $user;
             }
-            echo "увы... D':";
+            echo "ошибка, неверный логин или пароль.";
             return $user;
         }
         
