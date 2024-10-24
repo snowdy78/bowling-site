@@ -4,4 +4,4 @@
 
 P. S. базу данных можно импортировать в phpMyAdmin, она находится /test1.sql 
 
-Сайт на данный момент находиться на хостинге InfinityFree.com (http://bobnober3g.temp.swtest.ru/index.php?page=main)
+Сайт на данный момент находиться на хостинге InfinityFree.com ([http://bobnober3g.temp.swtest.ru/index.php?page=main](http://www.bowlingpro.lovestoblog.com/))
