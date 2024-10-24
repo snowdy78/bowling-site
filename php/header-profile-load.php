@@ -18,7 +18,7 @@
         return;
     }
     $log = $_SESSION['login'];
-    $db = new DataBase("localhost", "root", "", "test1", 3306);
+    $db = DataBase::getDataBase();
     $user = $db->getUser($log);
     if (!isset($user))
         echo "user not found :(";
