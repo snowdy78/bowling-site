@@ -1,4 +1,4 @@
-ссылка на репозиторий с сайтом: https://github.com/snowdy78/bowling-site/tree/master
+ссылка на репозиторий с сайтом: https://github.com/snowdy78/bowling-site
 
 скриншоты там же в папке /scrn
 
