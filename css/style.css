@@ -534,8 +534,28 @@ form {
 }
 
 .abs-pos {
-    position:absolute
+    position: absolute;
 }
 .rel-pos {
     position: relative;
+}
+.register-form {
+    margin-bottom: 13px;
+}
+.auth-container * > li {
+    margin-left: 4ch;
+}
+.error-field {
+
+    padding: 5px 5px;
+    border: 1px solid brown;
+    border-radius: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: brown;
+    background-color: rgb(109 12 12 / 22%);
+}
+.error {
+    color: red;
+    font-weight: bold;
 }

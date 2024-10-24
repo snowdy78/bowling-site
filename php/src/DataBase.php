@@ -111,7 +111,7 @@
             $user = $this->getUser($login);
             if (!empty($user))
             {
-                echo "пользователь с таким login или email уже существует";
+                throw new ErrorException("пользователь с таким login или email уже существует");
             } 
             else if ($password == $repeat_password)
             {
@@ -122,11 +122,11 @@
                     $_SESSION['login'] = $login;
                     return $this->getUser($login);
                 }
-                print "пользователь незарегистрирован. Попробуйте еще раз";
+                throw new ErrorException("пользователь незарегистрирован. Попробуйте еще раз");
             }
             else 
             {
-                echo "пароли не совпадают";
+                throw new ErrorException("пароли не совпадают");
             }
             return NULL;
         }
