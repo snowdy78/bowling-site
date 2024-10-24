@@ -536,6 +536,13 @@ form {
 .abs-pos {
     position: absolute;
 }
+.profile-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.profile-label {
+    height: 40px;
+}
 .rel-pos {
     position: relative;
 }
